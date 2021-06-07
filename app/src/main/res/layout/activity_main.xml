@@ -82,6 +82,7 @@
         android:layout_marginRight="96dp"
         android:onClick="login"
         android:text="@string/login_btn"
+        android:textColor="?android:attr/textColorPrimary"
         android:textColorHighlight="@color/purple_500"
         android:textSize="16sp"
         app:backgroundTint="?attr/colorSecondary"
