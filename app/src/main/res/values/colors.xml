@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow_primary">#F0E635</color>
     <color name="yellow_primary_variant">#C6BE1B</color>
+    <color name="yellow_light">#FFECCC</color>
+    <color name="yellow_light_dark">#5A4E39</color>
     <color name="red_secundary">#ED2B4E</color>
     <color name="blue_secundary">#13AEED</color>
     <color name="gray">#5A5A5A</color>
