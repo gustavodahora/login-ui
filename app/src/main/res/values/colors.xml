@@ -11,4 +11,5 @@
     <color name="yellow_primary_variant">#C6BE1B</color>
     <color name="red_secundary">#ED2B4E</color>
     <color name="blue_secundary">#13AEED</color>
+    <color name="gray">#5A5A5A</color>
 </resources>
