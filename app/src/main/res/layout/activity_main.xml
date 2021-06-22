@@ -7,14 +7,16 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/app_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        app:layout_constraintTop_toBottomOf="@id/dark_btn"
+        app:layout_constraintBottom_toTopOf="@id/emailMaterial"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:contentDescription="@string/app_logo_duck" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailMaterial"
@@ -31,7 +33,8 @@
         app:hintTextColor="?attr/colorSecondaryVariant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo"
+        app:layout_constraintBottom_toTopOf="@+id/passwordMaterial"
         app:startIconDrawable="@drawable/ic_baseline_mark_email_unread_24"
         app:startIconTint="?attr/colorSecondaryVariant">
 
@@ -39,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,6 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailMaterial"
+        app:layout_constraintBottom_toTopOf="@id/loginButton"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
         app:startIconTint="?attr/colorSecondaryVariant">
@@ -67,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,10 +92,12 @@
         app:backgroundTint="?attr/colorSecondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordMaterial" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordMaterial"
+        app:layout_constraintBottom_toTopOf="@id/forgot_password"
+        />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -100,7 +106,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
-    <Switch
+    <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/dark_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -110,6 +116,8 @@
         android:drawableLeft="@drawable/ic_baseline_bedtime_24"
         android:onClick="theme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/app_logo"
+        android:drawableStart="@drawable/ic_baseline_bedtime_24"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

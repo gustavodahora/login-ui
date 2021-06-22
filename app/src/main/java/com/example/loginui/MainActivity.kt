@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.loginui.databinding.ActivityMainBinding
 
@@ -53,6 +54,5 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(applicationContext, InitialScreen::class.java)
         startActivity(intent)
     }
-
 
 }
